@@ -104,9 +104,8 @@ class AppWindow(QWidget):
         super().__init__()
         self.initUI()
 
-        self.setWindowIcon(QIcon('./icon/logo.jpg'))
-        # set the title
-        self.setWindowTitle("Icon")
+        self.setWindowIcon(QIcon('./icon/logo.png'))
+        self.setWindowTitle("Draft BOM Generator")
 
 
     def initUI(self):
