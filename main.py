@@ -104,7 +104,7 @@ class AppWindow(QWidget):
         super().__init__()
         self.initUI()
 
-        self.setWindowIcon(QIcon('./icon/logo.png'))
+        self.setWindowIcon(QIcon('./img/logo.png'))
         self.setWindowTitle("Draft BOM Generator")
 
 
@@ -114,19 +114,19 @@ class AppWindow(QWidget):
         inputLayout = QHBoxLayout()
 
         # File path input
-        self.pathName_text = QLabel('檔案路徑: ')
+        self.pathName_text = QLabel('Target File Path: ')
         pathLayout.addWidget(self.pathName_text)
         self.filePathInput = QLineEdit(self)
         pathLayout.addWidget(self.filePathInput)
 
         # Button for selecting file path
-        self.selectPathButton = QPushButton('瀏覽', self)
+        self.selectPathButton = QPushButton('Browse', self)
         self.selectPathButton.clicked.connect(self.select_path)
         pathLayout.addWidget(self.selectPathButton)
 
         mainLayout.addLayout(pathLayout)  # Add the horizontal layout to the main layout
 
-        self.fileName = QLabel('儲存名稱: ')
+        self.fileName = QLabel('Saved File name: ')
         inputLayout.addWidget(self.fileName)
         self.fileNameInput = QLineEdit(self)
         inputLayout.addWidget(self.fileNameInput)
@@ -134,7 +134,7 @@ class AppWindow(QWidget):
         mainLayout.addLayout(inputLayout)
 
         # Button to activate program
-        self.activateButton = QPushButton('搜尋', self)
+        self.activateButton = QPushButton('Generate', self)
         self.activateButton.clicked.connect(self.startTask)
         mainLayout.addWidget(self.activateButton)
     
