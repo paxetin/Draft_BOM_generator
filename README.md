@@ -8,7 +8,7 @@ This Draft BOM Generator is a small program for generating and managing Bills of
 
 
 ## Configuration
-Edit `config.json` to set API keys and other configurations.
+Edit `config.json` to set Mouser API keys for getting BOM information since this program is based on Mouser API.
 
 ## Features
 - **BOM Generation**: Automatically generate BOMs from various input formats.
