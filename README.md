@@ -1,10 +1,10 @@
 
-# Bill of Materials (BOM) Management Software
+# Draft BOM Generator
 
 ## Overview
 This Draft BOM Generator is a small program for generating and managing Bills of Materials (BOM) in electronics manufacturing.
 
-![Apprearance](path/to/img1.jpg)  <!-- Replace with the actual path to the logo in your repository -->
+![Apprearance](./img/img1.jpg)  <!-- Replace with the actual path to the logo in your repository -->
 
 
 ## Configuration
